@@ -28,6 +28,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    flex-wrap: wrap;
 }
 
 .navbar .logo {
@@ -35,6 +36,31 @@ body {
     font-weight: bold;
 }
 
+/* Contenedor logo + idioma */
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Selector de idioma */
+.language-selector select {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-selector select:hover {
+    background: #272727;
+    color: #ffffff;
+}
+
+/* Links del menú */
 .navbar .nav-links {
     display: flex;
     gap: 25px;
@@ -62,42 +88,49 @@ body {
     cursor: pointer;
 }
 
+.menu-toggle.active {
+    color: #00bcd4;
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+
 /* ---------- SECCIONES ---------- */
 header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
     padding: 80px 10%;
-    min-height: 90vh; /* ✅ Ocupa casi toda la pantalla */
+    min-height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 /* FONDOS ANGULARES */
 .Inicio {
     background: #222;
     color: white;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    
 }
 
 .Sobremi {
     background: #e8e8e8;
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    
 }
 
 .Habilidades {
     background: #f5f5f5;
-    clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+   
 }
 
 .Insignias {
     background: #e8e8e8;
-    color: #000000;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    color: #000;
+    
 }
 
 .Proyectos {
     background: #f5f5f5;
-    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+    
 }
 
 /* CONTENIDO */
@@ -111,12 +144,20 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
     max-width: 1100px;
 }
 
-.Sobremi .text, .Habilidades, .Insignias, .text, .project {
+.Sobremi .text,
+.Habilidades .text,
+.Insignias .text,
+.Proyectos .text,
+.project {
     flex: 1 1 400px;
+    min-width: 280px;
 }
 
+/* ---------- IMÁGENES ---------- */
 .Sobremi .image img {
-    width: 280px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
@@ -136,19 +177,21 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
 }
 
 .Insignias .images img {
-    width: 180px;
+    width: 100%;
+    max-width: 180px;
     padding: 10px;
-    border-radius: 10x;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .Proyectos .images img {
-    width: 280px;
-    border-radius: 10x;
+    width: 100%;
+    max-width: 280px;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-
+/* ---------- TABLAS ---------- */
 .TablaHabilidades {
     width: 100%;
     max-width: 800px;
@@ -169,6 +212,7 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
 .TablaHabilidades td {
     padding: 15px 20px;
     text-align: left;
+    word-wrap: break-word;
 }
 
 .TablaHabilidades tbody tr:nth-child(even) {
@@ -180,7 +224,6 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
     transition: background 0.3s ease;
 }
 
-
 /* ---------- FOOTER ---------- */
 footer {
     background: #111;
@@ -188,7 +231,7 @@ footer {
     text-align: center;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
     padding: 60px 10%;
-    min-height: 50vh; /* Un poco más pequeño que las otras secciones */
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,6 +249,22 @@ footer h3 {
     gap: 20px;
 }
 
+.cv-button {
+    background-color: #00a86b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #008c5f;
+    transform: scale(1.05);
+}
+
 /* ---------- EFECTO SCROLL ---------- */
 section, header {
     opacity: 0;
@@ -219,8 +278,14 @@ section.visible, header.visible {
 }
 
 /* ---------- RESPONSIVO ---------- */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+}
+
+/* Tablets y móviles */
 @media (max-width: 768px) {
-    /* NAV RESPONSIVO */
     .menu-toggle {
         display: block;
     }
@@ -230,12 +295,13 @@ section.visible, header.visible {
         flex-direction: column;
         background: #111;
         position: absolute;
-        top: 60px;
+        top: 65px;
         right: 0;
         width: 200px;
         text-align: right;
-        padding: 10px;
+        padding: 15px;
         border-radius: 0 0 0 10px;
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -251,20 +317,56 @@ section.visible, header.visible {
     .content {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
     }
 
     .Sobremi .image img {
-        width: 180px;
+        max-width: 200px;
     }
 
     .Habilidades .images img {
         width: 70px;
         height: 70px;
     }
-}
-@media (max-width: 768px) {
+
+    .Insignias .images img,
+    .Proyectos .images img {
+        max-width: 90%;
+    }
+
     .TablaHabilidades th, .TablaHabilidades td {
         padding: 10px;
         font-size: 0.9em;
+    }
+
+    footer {
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Modo horizontal en móviles */
+@media (max-height: 500px) and (orientation: landscape) {
+    header, section, footer {
+        padding: 60px 5%;
+        min-height: auto;
+    }
+
+    .nav-links {
+        top: 55px;
+    }
+
+    .Sobremi .image img {
+        max-width: 150px;
+    }
+
+    .Habilidades .images img {
+        width: 60px;
+        height: 60px;
     }
 }

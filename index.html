@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Carlos Zamudio</title>
+    <title data-lang="Titulo">Portafolio - Carlos Zamudio</title>
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/MenuHamburguesa.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">Mi Portafolio</div>
-        <button class="menu-toggle" id="menu-toggle">☰ Menú</button>
+        <div class="left-section">
+            <div class="logo" data-lang="Logo">Mi Portafolio</div>
+
+            <!-- 🔽 MENÚ DE IDIOMAS -->
+            <div class="language-selector">
+                <select id="language">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="menu-toggle" id="menu-toggle" data-lang="Menu">Menú</button>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#acerca">Sobre mí</a></li>
-            <li><a href="#habilidades">Tecnologías</a></li>
-            <li><a href="#insignias">Insignias</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio" data-lang="NavPrincipal">Inicio</a></li>
+            <li><a href="#acerca" data-lang="NavAcerca">Sobre mí</a></li>
+            <li><a href="#habilidades" data-lang="NavHabilidades">Tecnologías</a></li>
+            <li><a href="#proyectos" data-lang="NavProyecto">Proyectos</a></li>
+            <li><a href="#contacto" data-lang="NavContacto">Contacto</a></li>
         </ul>
     </nav>
 
@@ -26,11 +37,8 @@
     <header class="Inicio" id="inicio">
         <div class="content">
             <div class="text">
-                <h1>Carlos Eduardo Zamudio Coronado</h1>
-                <h2>Sitio Web de Portafolio Personal</h2>
-            </div>
-            <div class="image">
-                <img src="img/linux.png" alt="Foto de perfil">
+                <h1 data-lang="NombreAlumno">Carlos Eduardo Zamudio Coronado</h1>
+                <h2 data-lang="Subtitulo">Sitio Web de Portafolio Personal</h2>
             </div>
         </div>
     </header>
@@ -39,8 +47,8 @@
     <section class="Sobremi" id="acerca">
         <div class="content">
             <div class="text">
-                <h2>Perfil profesional</h2>
-                <p>
+                <h2 data-lang="TituloPerfil">Perfil profesional</h2>
+                <p data-lang="TextoPerfil">
                     Acerca de mi perfil profesional 
                     actualmente soy estudiiante de la Universidad Politecnica de Sinaloa el cual esta interesado en el área de
                     la <strong>Ciberseguridad</strong> especialmente en la <strong>recuperación de datos</strong> y poner a prueba la <strong>seguridad de sistios web, sistemas y redes privadas de empresas</strong>. <br>
@@ -58,50 +66,50 @@
     <section class="Habilidades" id="habilidades">
         <div class="content">
             <div class="text">
-                <h2>Insignias y tecnologías aprendidas</h2>
+                <h2 data-lang="Tecnologias">Tecnologías aprendidas</h2>
                     <table class="TablaHabilidades">
                         <thead>
                             <tr>
-                                <th>Tecnología</th>
+                                <th data-lang="ThTecnologia">Tecnología</th>
                                 <th>Descripción</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>MySQL</td>
-                                <td>Manejo y administración de bases de datos.</td>
+                                <td data-lang="TdMySQL">Manejo y administración de bases de datos.</td>
                             </tr>
                             <tr>
                                 <td>HTML5 y CSS3</td>
-                                <td>Desarrollo y diseño de interfaces web modernas y responsivas.</td>
+                                <td data-lang="TdHTML">Desarrollo y diseño de interfaces web modernas y responsivas.</td>
                             </tr>
                             <tr>
                                 <td>C++</td>
-                                <td>Lenguajes de programación para desarrollo de software multiplataforma.</td>
+                                <td data-lang="TdC">Lenguajes de programación para desarrollo de software multiplataforma.</td>
                             </tr>
                             <tr>
                                 <td>Java</td>
-                                <td>Conocimientos en la GUI para el diseño y desarrollo de aplicaciones de escritorio.</td>
+                                <td data-lang="TdJava">Conocimientos en la GUI para el diseño y desarrollo de aplicaciones de escritorio.</td>
                             </tr>
                             <tr>
                                 <td>Kotlin</td>
-                                <td>Desarrollo de aplicaciones móviles Nativas en Android.</td>
+                                <td data-lang="TdKotlin">Desarrollo de aplicaciones móviles Nativas en Android.</td>
                             </tr>
                             <tr>
                                 <td>Python</td>
-                                <td>Conocimiento básico del lenguaje para desarrollar scripts de visión artificial y creación de malware como ransomware o bots de spam.</td>
+                                <td data-lang="TdPython">Conocimiento básico del lenguaje para desarrollar scripts de visión artificial y creación de malware como ransomware o bots de spam.</td>
                             </tr>
                             <tr>
-                                <td>Sistemas Operativos</td>
-                                <td>Conocimiento en creación de scripts en la bash de Linux y conocimiento en las distribuciones de CentOS, Unbuntu, Fedora y Kali Linux + conocimiento en NMap y WireShark.</td>
+                                <td data-lang="TdSistemas">Sistemas Operativos</td>
+                                <td data-lang="TdSO">Conocimiento en creación de scripts en la bash de Linux y conocimiento en las distribuciones de CentOS, Unbuntu, Fedora y Kali Linux + conocimiento en NMap y WireShark.</td>
                             </tr>
                             <tr>
-                                <td>Servidores y servicios</td>
-                                <td>Ligeros conocimientos para montar servidores usando Apache, Apache Tomcat y php.</td>
+                                <td data-lang="TdServer">Servidores y servicios</td>
+                                <td data-lang="TdServers">Ligeros conocimientos para montar servidores usando Apache, Apache Tomcat y php.</td>
                             </tr>
                             <tr>
-                                <td>Redes</td>
-                                <td>Conocimientos en mantenimiento, administración y estructura de redes por medio del simulador Cisco Packet Tracer.</td>
+                                <td data-lang="TdRed">Redes</td>
+                                <td data-lang="TdRedes">Conocimientos en mantenimiento, administración y estructura de redes por medio del simulador Cisco Packet Tracer.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -121,22 +129,21 @@
     </section>
 
     <section class="Insignias" id="insignias">
-        <h2>Insignias obtenidas</h2>
+        <h2 data-lang="Insignias">Insignias obtenidas</h2>
         <div class="content">
             <div class="text">
-                <p>
-                    Esta es una insignia que obtuve al completar el curso de "Introduction to Networks" en Cisco Networking Academy. <br>
-                    En donde obtuve conocimientos básicos de redes como los modelos OSI y TCP/IP, tipos de redes LAN y WAN, tipos de cables y conexiones
-                    y protocolos y configuraciones basicas como Telnet, IP, Subnetting.
+                <p data-lang="PrimeraInsignia">
+                    Esta es una insignia que obtuve al completar el curso de "Introduction to Networks" en Cisco Networking Academy.
                 </p>
             </div>
             <div class="images">
                 <img src="img/NetworkIntroduction.png" alt="Network Introduction">
+                <figcaption></figcaption>
             </div>
         </div>
         <div class="content">
             <div class="text">
-                <p>
+                <p data-lang="SegundaInsignia">
                     Esta es una insignia que obtuve al completar el curso de "Network Technician" en Cisco Networking Academy. <br>
                     En donde obtuve conocimientos de mantenimiento y solución de problemas en redes pequeñas y medianas, 
                     configuración y gestión de dispositivos de red como switches y routers, y conceptos de seguridad en redes.
@@ -148,7 +155,7 @@
         </div>
         <div class="content">
             <div class="text">
-                <p>
+                <p data-lang="TerceraInsignia">
                     Esta es una insignia que obtuve al completar el curso de "CCNA Switching, Routing and WL Essentials" en Cisco Networking Academy. <br>
                     En donde obtuve conocimientos de diversos protocolos y configuraciones de dispositivos de red inalambricos como routers de casa, puntos de acceso
                     y configurar y gestionar redes de internet WAN para empresas o instituciones grandes.
@@ -160,7 +167,7 @@
         </div>
         <div class="content">
             <div class="text">
-                <p>
+                <p data-lang="CuartaInsignia">
                     Esta es una insignia que obtuve al completar el curso de "Introduction to Cybersecurity" en Cisco Networking Academy. <br>
                     En donde obtuve conocimientos básicos sobre la ciberseguridad, tipos de amenazas y ataques cibernéticos,
                     conceptos de cifrados de datos, riesgos de redes públicas etc., además de la importancia de la 
@@ -177,36 +184,43 @@
     <section class="Proyectos" id="proyectos">
         <div class="content">
             <div class="project">
-                <h2>Proyectos en los que he participado</h2>
-                <p>Participe en el desarrollo de una aplicación web llamada <strong>Nuvii</strong>. <br>
-                Esta era un gestor de comandas para los negocios pequeños de dueños sin experiencia</p>
-                <a href="https://www.figma.com/design/KkSWqMlwy42FwJDXx8gFFD/Nuvii?node-id=0-1&t=3seFYrFPY9VbSnyP-1">Enlace de Pantallas de protoripo de Nuvii</a>
+                <h2 data-lang="Proyectos">Proyectos en los que he participado</h2>
+                <p data-lang="Nuvii"><strong>Nuvvi: Gestor de comandas</strong></p>
+                <a href="https://www.figma.com/design/KkSWqMlwy42FwJDXx8gFFD/Nuvii?node-id=0-1&t=3seFYrFPY9VbSnyP-1" data-lang="aNuvii">Enlace de Pantallas de prototipo de Nuvii</a>
             </div>
             <div class="images">
                 <img src="img/nuvii.png" alt="Nuvii">
             </div>
+            <div class="content">
+            <div class="project">
+                <p data-lang="Recolecta"><strong>Recolecta: App para el servicio de basura en Mazatlán</strong></p>
+                <a href="https://www.figma.com/design/ylkd56zTtwUVEizpQD0gTx/pantallas-principales?node-id=0-1&t=aJVgnzxFXLeG3JHT-1" data-lang="aRecolecta">Enlace de Pantallas de prototipo de Recolecta</a>
+            </div>
+            <div class="images">
+                <img src="img/recolecta.png" alt="Nuvii">
+            </div>
     </section>
-
+</body>
     <!-- FOOTER -->
     <footer id="contacto">
         <div class="footer-content">
             <div>
-                <h3>Redes Sociales</h3>
-                <p>Instagram: @elcarorachas</p>
-                <p>TikTok: @_soy.carlos</p>
-            </div>
-            <div>
-                <h3>Redes Sociales Profesionales</h3>
+                <h3 data-lang="Social">Redes Sociales Profesionales</h3>
                 <p>GitHub: carlos-zamudio</p>
                 <p>GitLab: @2024030367</p>
                 <p>LinkedIn: Carlos Zamudio</p>
             </div>
             <div>
-                <h3>Email</h3>
+                <h3 data-lang="Email">Email</h3>
                 <p>2024030367@upsin.edu.mx</p>
+            </div>
+            <div>
+                <h3 data-lang="CV">Mi CV</h3>
+                <button class="cv-button" onclick="AbrirPDF()">Ver mi CV</button>
             </div>
         </div>
     </footer>
     <script src="js/Info_visible.js"></script>
-</body>
+    <script src="js/Traduccion.js"></script>
+    <script src="js/abrircv.js"></script>
 </html>
