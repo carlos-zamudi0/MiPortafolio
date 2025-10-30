@@ -183,6 +183,43 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+    .hover-image {
+        width: 200px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .hover-image:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+    .insignias-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+    .insignias-grid .images {
+        flex: 0 1 auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .insignias-grid .hover-image {
+        width: 180px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .insignias-grid .hover-image:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
 
 .Proyectos .images img {
     width: 100%;
@@ -229,19 +266,6 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
         justify-content: center;
         align-items: center;
     }
-
-    .hover-image {
-        width: 200px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        border-radius: 10px;
-    }
-
-    .hover-image:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-        cursor: pointer;
-    }
-
 
 /* ---------- FOOTER ---------- */
 footer {
@@ -351,6 +375,11 @@ section.visible, header.visible {
     .Insignias .images img,
     .Proyectos .images img {
         max-width: 90%;
+    }
+    
+    .insignias-grid {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .TablaHabilidades th, .TablaHabilidades td {
