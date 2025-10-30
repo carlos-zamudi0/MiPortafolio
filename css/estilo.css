@@ -224,6 +224,25 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
     transition: background 0.3s ease;
 }
 
+ .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hover-image {
+        width: 200px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .hover-image:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+
 /* ---------- FOOTER ---------- */
 footer {
     background: #111;
