@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-lang="Titulo">Portafolio - Carlos Zamudio</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="js/MenuHamburguesa.js"></script>
+    <script src="js/Menu.js"></script>
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="left-section">
-            <div class="logo" data-lang="Logo">Mi Portafolio</div>
+    <div class="left-section">
+        <div class="logo" data-lang="Logo">Mi Portafolio</div>
 
-            <!-- 🔽 MENÚ DE IDIOMAS -->
-            <div class="language-selector">
-                <select id="language">
-                    <option value="es">Español</option>
-                    <option value="en">English</option>
-                    <option value="fr">Français</option>
-                </select>
-            </div>
+        <div class="language-selector">
+        <select id="language">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+        </select>
         </div>
+    </div>
 
-        <button class="menu-toggle" id="menu-toggle" data-lang="Menu">Menú</button>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#inicio" data-lang="NavPrincipal">Inicio</a></li>
-            <li><a href="#acerca" data-lang="NavAcerca">Sobre mí</a></li>
-            <li><a href="#habilidades" data-lang="NavHabilidades">Tecnologías</a></li>
-            <li><a href="#proyectos" data-lang="NavProyecto">Proyectos</a></li>
-            <li><a href="#contacto" data-lang="NavContacto">Contacto</a></li>
-        </ul>
+    <!-- Botón hamburguesa -->
+    <button class="MenuH" id="menu">☰</button>
+
+    <!-- Enlaces del menú -->
+    <ul class="NavLink" id="links">
+        <li><a href="#inicio" data-lang="Inicio">Inicio</a></li>
+        <li><a href="#acerca" data-lang="SobreMi">Sobre mí</a></li>
+        <li><a href="#habilidades" data-lang="Habilidades">Tecnologías</a></li>
+        <li><a href="#proyectos" data-lang="Proyectos">Proyectos</a></li>
+        <li><a href="#contacto" data-lang="Contacto">Contacto</a></li>
+    </ul>
     </nav>
 
     <!-- HEADER -->
