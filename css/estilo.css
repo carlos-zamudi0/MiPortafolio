@@ -228,11 +228,31 @@ header, .Sobremi, .Habilidades, .Insignias, .Proyectos, footer {
 }
 
 /* Proyectos */
+.Proyectos .content {
+    flex-direction: column;
+    gap: 25px; /* menos espacio entre elementos */
+}
+
+.Proyectos .project {
+    margin-bottom: 10px;
+}
+
+.Proyectos .images {
+    display: flex;
+    justify-content: center;
+}
+
 .Proyectos .images img {
-    width: 100%;
+    width: 80%;
     max-width: 280px;
     border-radius: 10px;
     box-shadow: 0 4px 10px #00000033;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Proyectos .images img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px #0000004d;
 }
 
 /* Tabla de habilidades */
@@ -392,6 +412,12 @@ section.visible, header.visible {
 
     .TablaHabilidades {
         font-size: 0.9em;
+    }
+    .Proyectos .content {
+        gap: 20px;
+    }
+    .Proyectos .images img {
+        width: 90%;
     }
 }
 
