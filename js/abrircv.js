@@ -1,3 +1,3 @@
 function AbrirPDF() {
-    window.open('doc/MiCv.pdf', '_blank');
+    window.open('doc/CVPersonal.pdf', '_blank');
 }

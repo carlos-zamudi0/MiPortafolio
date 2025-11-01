@@ -1,5 +1,3 @@
-// js/Traduccion.js
-
 const translations = {
     es: {
         Titulo: "Portafolio - Carlos Zamudio",
@@ -40,48 +38,53 @@ const translations = {
         Recolecta : "Recolecta: App para el servicio de basura en Mazatlán",
         aRecolecta : "Enlace de Pantallas de prototipo de Recolecta",
         Social: "Redes Sociales Profesionales",
-        Email: "Correo Electrónico"
+        Email: "Correo Electrónico",
+        CV: "Mi CV",
+        VerCV: "Ir allá"
+
     },
     en: {
-    Titulo: "Portfolio - Carlos Zamudio",
-    Logo: "My Portfolio",
-    Menu: "Menu",
-    NavPrincipal: "Home",
-    NavAcerca: "About Me",
-    NavHabilidades: "Technologies",
-    NavProyecto: "Projects",
-    NavContacto: "Contact",
-    NombreAlumno: "Carlos Eduardo Zamudio Coronado",
-    Subtitulo: "Personal Portfolio Website",
-    TituloPerfil: "Professional Profile",
-    TextoPerfil: "About my professional profile: I am currently a student at the Polytechnic University of Sinaloa, interested in the field of Cybersecurity, especially in data recovery and testing the security of websites, systems, and private company networks. Another area I’m passionate about is native Android mobile app development, particularly Front-End development. My profile focuses on mobile development and network administration and technical management.",
-    Tecnologias: "Learned Technologies",
-    ThTecnologia: "Technology",
-    ThDescripcion: "Description",
-    TdMySQL: "Database management and administration.",
-    TdHTML: "Development and design of modern and responsive web interfaces.",
-    TdC: "Programming languages for cross-platform software development.",
-    TdJava: "Knowledge of GUI design and development for desktop applications.",
-    TdKotlin: "Knowledge of GUI design and development for desktop applications.",
-    TdPython: "Basic knowledge of the language for developing computer vision scripts and creating malware such as ransomware or spam bots.",
-    TdSistemas: "Operating Systems",
-    TdSO: "Knowledge in creating scripts in Linux bash and familiarity with distributions such as CentOS, Ubuntu, Fedora, and Kali Linux + experience with NMap and Wireshark.",
-    TdServer: "Servers and Services",
-    TdServers: "Basic knowledge of setting up servers using Apache, Apache Tomcat, and PHP.",
-    TdRed: "Networks",
-    TdRedes: "Knowledge in maintenance, administration, and network structure using the Cisco Packet Tracer simulator.",
-    Insignias: "Obtained Badges",
-    PrimeraInsignia: "This is a badge I earned upon completing the 'Introduction to Networks' course.",
-    SegundaInsignia: "This is a badge I earned upon completing the 'CCNA Switching Routing and Wireless Essentials' course.",
-    TerceraInsignia: "This is a badge I earned upon completing the 'Introduction to Cybersecurity' course.",
-    CuartaInsignia: "This is a badge I earned upon completing the 'Introduction to Programming' course.",
-    Proyectos: "Projects I Have Participated In",
-    Nuvii: "Nuvvi: Order Manager",
-    aNuvii: "Link to Nuvvi Prototype Screens",
-    Recolecta: "Recolecta: App for Waste Collection Service in Mazatlán",
-    aRecolecta: "Link to Recolecta Prototype Screens",
-    Social: "Professional Social Networks",
-    Email: "Email"
+        Titulo: "Portfolio - Carlos Zamudio",
+        Logo: "My Portfolio",
+        Menu: "Menu",
+        NavPrincipal: "Home",
+        NavAcerca: "About Me",
+        NavHabilidades: "Technologies",
+        NavProyecto: "Projects",
+        NavContacto: "Contact",
+        NombreAlumno: "Carlos Eduardo Zamudio Coronado",
+        Subtitulo: "Personal Portfolio Website",
+        TituloPerfil: "Professional Profile",
+        TextoPerfil: "About my professional profile: I am currently a student at the Polytechnic University of Sinaloa, interested in the field of Cybersecurity, especially in data recovery and testing the security of websites, systems, and private company networks. Another area I’m passionate about is native Android mobile app development, particularly Front-End development. My profile focuses on mobile development and network administration and technical management.",
+        Tecnologias: "Learned Technologies",
+        ThTecnologia: "Technology",
+        ThDescripcion: "Description",
+        TdMySQL: "Database management and administration.",
+        TdHTML: "Development and design of modern and responsive web interfaces.",
+        TdC: "Programming languages for cross-platform software development.",
+        TdJava: "Knowledge of GUI design and development for desktop applications.",
+        TdKotlin: "Knowledge of GUI design and development for desktop applications.",
+        TdPython: "Basic knowledge of the language for developing computer vision scripts and creating malware such as ransomware or spam bots.",
+        TdSistemas: "Operating Systems",
+        TdSO: "Knowledge in creating scripts in Linux bash and familiarity with distributions such as CentOS, Ubuntu, Fedora, and Kali Linux + experience with NMap and Wireshark.",
+        TdServer: "Servers and Services",
+        TdServers: "Basic knowledge of setting up servers using Apache, Apache Tomcat, and PHP.",
+        TdRed: "Networks",
+        TdRedes: "Knowledge in maintenance, administration, and network structure using the Cisco Packet Tracer simulator.",
+        Insignias: "Obtained Badges",
+        PrimeraInsignia: "This is a badge I earned upon completing the 'Introduction to Networks' course.",
+        SegundaInsignia: "This is a badge I earned upon completing the 'CCNA Switching Routing and Wireless Essentials' course.",
+        TerceraInsignia: "This is a badge I earned upon completing the 'Introduction to Cybersecurity' course.",
+        CuartaInsignia: "This is a badge I earned upon completing the 'Introduction to Programming' course.",
+        Proyectos: "Projects I Have Participated In",
+        Nuvii: "Nuvvi: Order Manager",
+        aNuvii: "Link to Nuvvi Prototype Screens",
+        Recolecta: "Recolecta: App for Waste Collection Service in Mazatlán",
+        aRecolecta: "Link to Recolecta Prototype Screens",
+        Social: "Professional Social Networks",
+        Email: "Email",
+        CV: "My CV",
+        VerCV: "Go there"
     },
     fr: {
         Titulo: "Portefeuille - Carlos Zamudio",
@@ -108,7 +111,7 @@ const translations = {
         TdSistemas: "Systèmes d’Exploitation",
         TdSO: "Connaissance de la création de scripts dans le bash de Linux et familiarité avec les distributions CentOS, Ubuntu, Fedora et Kali Linux + expérience avec NMap et Wireshark.",
         TdServer: "Serveurs et Services",
-        TdServer: "Connaissances de base pour configurer des serveurs avec Apache, Apache Tomcat et PHP.",
+        TdServers: "Connaissances de base pour configurer des serveurs avec Apache, Apache Tomcat et PHP.",
         TdRed: "Réseaux",
         TdRedes: "Connaissance de la maintenance, de l’administration et de la structure des réseaux à l’aide du simulateur Cisco Packet Tracer.",
         Insignias: "Badges Obtenus",
@@ -122,7 +125,9 @@ const translations = {
         Recolecta: "Recolecta : Application pour le Service de Collecte des Déchets à Mazatlán",
         aRecolecta: "Lien vers les Écrans du Prototype Recolecta",
         Social: "Réseaux Sociaux Professionnels",
-        Email: "Courriel"
+        Email: "Courriel",
+        CV: "Mon CV",
+        VerCV: "Aller"
     }
 };
 
@@ -145,5 +150,5 @@ function setLanguage(lang) {
             el.textContent = translations[lang][key];
         }
     });
-    document.title = translations[lang].title;
+    document.title = translations[lang].Titulo;
 }

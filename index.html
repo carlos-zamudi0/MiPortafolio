@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-lang="Titulo">Portafolio - Carlos Zamudio</title>
+    <title data-lang="Titulo">Holamundo</title>
     <link rel="stylesheet" href="css/estilo.css">
     <script src="js/Menu.js"></script>
 </head>
 <body>
-    <!-- NAVBAR -->
     <nav class="navbar">
     <div class="left-section">
         <div class="logo" data-lang="Logo">Mi Portafolio</div>
 
         <div class="language-selector">
         <select id="language">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="fr">Français</option>
+            <option value="es">Español 🇲🇽</option>
+            <option value="en">English 🇺🇸</option>
+            <option value="fr">Français 🇫🇷</option>
         </select>
         </div>
     </div>
-
-    <!-- Botón hamburguesa -->
     <button class="MenuH" id="menu">☰</button>
-
-    <!-- Enlaces del menú -->
     <ul class="NavLink" id="links">
         <li><a href="#inicio" data-lang="NavPrincipal">Inicio</a></li>
         <li><a href="#acerca" data-lang="NavAcerca">Sobre mí</a></li>
@@ -34,8 +29,6 @@
         <li><a href="#contacto" data-lang="NavContacto">Contacto</a></li>
     </ul>
     </nav>
-
-    <!-- HEADER -->
     <header class="Inicio" id="inicio">
         <div class="content">
             <div class="text">
@@ -44,17 +37,15 @@
             </div>
         </div>
     </header>
-
-    <!-- SECCIÓN QUIÉN SOY -->
     <section class="Sobremi" id="acerca">
         <div class="content">
             <div class="text">
                 <h2 data-lang="TituloPerfil">Perfil profesional</h2>
                 <p data-lang="TextoPerfil">
-                    Acerca de mi perfil profesional 
+                    Acerca de mi perfil profesional, 
                     actualmente soy estudiiante de la Universidad Politecnica de Sinaloa el cual esta interesado en el área de
                     la <strong>Ciberseguridad</strong> especialmente en la <strong>recuperación de datos</strong> y poner a prueba la <strong>seguridad de sistios web, sistemas y redes privadas de empresas</strong>. <br>
-                    Otra área que me apaciona es el desarrollo de aplicaciones móviles nativas en <strong>adnroid</strong> de esa área me interesa más el desarrollo <strong>FrontEnd</strong>.
+                    Otra área que me apaciona es el desarrollo de aplicaciones móviles nativas en <strong>adnroid</strong> de esa área me interesa más el desarrollo <strong>FrontEnd</strong>. <br>
                     Mi perfil se basa en <strong>Desarrollador móvil</strong> y <strong>Técnico y administrador en redes</strong>.
                 </p>
             </div>
@@ -63,8 +54,6 @@
             </div>
         </div>
     </section>
-
-    <!-- SECCIÓN TECNOLOGÍAS -->
     <section class="Habilidades" id="habilidades">
         <div class="content">
             <div class="text">
@@ -73,7 +62,7 @@
                         <thead>
                             <tr>
                                 <th data-lang="ThTecnologia">Tecnología</th>
-                                <th>Descripción</th>
+                                <th data-lang="ThDescripcion">Descripción</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -129,10 +118,8 @@
             <img src="img/ApacheTomcat.png" alt="Apache Tomcat"> 
          </div> 
     </section>
-
     <section class="Insignias" id="insignias">
         <h2 data-lang="Insignias">Insignias obtenidas</h2>
-
         <div class="content insignias-grid">
             <div class="images">
                 <a href="https://www.credly.com/badges/bdbdbc3a-92ad-47b2-8355-cb9c72418bfb" target="_blank"> 
@@ -156,8 +143,6 @@
             </div>
         </div>
     </section>
-
-    <!-- SECCIÓN PROYECTOS -->
     <section class="Proyectos" id="proyectos">
         <div class="content">
             <div class="project">
@@ -168,7 +153,6 @@
             </div>
             <a href="https://www.figma.com/design/KkSWqMlwy42FwJDXx8gFFD/Nuvii?node-id=0-1&t=3seFYrFPY9VbSnyP-1" data-lang="aNuvii">Enlace de Pantallas de prototipo de Nuvii</a>
             </div>
-
             <div class="project">
                 <p data-lang="Recolecta"><strong>Recolecta: App para el servicio de basura en Mazatlán</strong></p>
             <div class="images">
@@ -179,7 +163,6 @@
         </div>
     </section>
 </body>
-    <!-- FOOTER -->
     <footer id="contacto">
         <div class="footer-content">
             <div>
@@ -194,7 +177,7 @@
             </div>
             <div>
                 <h3 data-lang="CV">Mi CV</h3>
-                <button class="cv-button" onclick="AbrirPDF()">Ver mi CV</button>
+                <button class="cv-button" onclick="AbrirPDF()" data-lang="VerCV">Ir allá</button>
             </div>
         </div>
     </footer>
